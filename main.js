@@ -65,6 +65,7 @@ $(document).ready(function(){
                 $("h3").text("CLICK TO REPLAy");
                 
                 $("h3").on("click",function(){
+                    themeSong.play();
                     $("button").fadeIn();
                     $("h1").html("LEVEL<span>1</span>")
                     $("h3").html("Score:<emp>0</emp>")
