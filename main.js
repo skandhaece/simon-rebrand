@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    var themeSong = new Audio("./music/theme-song.mp3")
+    const themeSong = new Audio("./music/theme-song.mp3")
     
     $("button").fadeOut();
 
     async function mainRunning(level,score)
     {
-        var buttonPressSound = new Audio("./music/button-clicking.mp3")
+        const buttonPressSound = new Audio("./music/button-clicking.mp3")
         
-        var gameOver = new Audio("./music/game-over.mp3")
+        const gameOver = new Audio("./music/game-over.mp3")
         
         
         // $("h1").text(textOfButton)
