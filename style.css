@@ -1,0 +1,88 @@
+body{
+    background-color: #40534C;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 10px black solid;
+    border-radius: 50%;
+}
+.container{
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.green{
+    background-color: green;
+    color: green;
+}
+.red{
+    background-color: red;
+    color: red;
+}
+.yellow{
+    background-color: #F4CE14;
+    color: #F4CE14;
+}
+.blue{
+    background-color: blue;
+    color: blue
+}
+
+
+footer{
+    text-align: center;
+    margin-top: 4%;
+}
+h1{
+    text-align: center;
+    margin-bottom: 8%;
+    letter-spacing: 8px;
+}
+
+button:active{
+    background-color: white;
+    color: white;
+    transform: rotate3d(1,1,1,45deg);
+    transform: rotate3d(1,1,1,-45deg);
+
+    
+}
+.button-display{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-align: center;
+    opacity: 0.5;
+    font-size: 40px;
+}
+
+@media(min-width:270px) and (max-width:500px) {
+    .box{
+        width: 100px;
+        height: 100px;
+    }
+    .container{
+        margin-top: 20%;
+    }
+    footer{
+        margin-top: 20%;
+    }
+    body{
+        height: 100vh;
+    }
+    
+}
